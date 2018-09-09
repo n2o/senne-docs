@@ -1,5 +1,5 @@
-Benutzung
-=========
+Öffentlicher Bereich
+====================
 
 Suche
 -----
