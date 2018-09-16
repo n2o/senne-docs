@@ -122,6 +122,8 @@ Autoren haben vier sichtbare Attribute:
 Oben rechts befindet sich der Button "Autor hinzufügen", den wir im nächsten
 Abschnitt behandeln.
 
+.. _autor_neu:
+
 Neuen Autor hinzufügen
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -155,13 +157,103 @@ beim Hinzufügen eines neuen Autors.
 
 .. _items:
 
-Items
-=====
+Items / Artikel
+===============
 
 Ohne Artikel wäre es ein sehr trauriges Archiv. Hier wird beschrieben, wie Items
 angelegt werden können, die dann sowohl intern als auch öffentlich einsehbar
-sind.
+sind. Bitte unbedingt auf "Sichern" klicken, damit die Artikel auch korrekt
+angelegt werden.
+
+.. note:: Es erfolgt kein automatisches Speichern, sondern es muss manuell gespeichert
+    werden.
 
 .. figure:: img/items_uebersicht.png
 
     Übersicht aller eingestellten Items.
+
+
+Neuen Artikel anlegen
+---------------------
+
+Klingt man in dem Bildchen oben auf "Item hinzufügen", so öffnet sich die Maske
+zur Erstellung eines neuen Artikels.
+
+.. raw:: html
+
+    <video width="100%" controls>
+        <source src="_static/vids/item_anlegen.mp4" type="video/mp4"> Dein
+        Browser unterstützt das Video nicht. Bitte installiere einen aktuellen
+        Browser.
+    </video>
+
+Die Pflichtfelder sind bewusst gering gehalten, damit ein frustfreies Anlegen
+garantiert ist. Es ist natürlich sehr sinnvoll die anderen Felder auch alle mit
+auszufüllen, falls möglich.
+
+Im Folgenden seien die einzelnen Felder erklärt, die ausgefüllt werden können.
+
+
+Titel und Verfasser
+~~~~~~~~~~~~~~~~~~~
+
+Titel
+    Das ist der angezeigte Titel des Artikels, so wie er auch im öffentlichen
+    Bereich angezeigt werden soll
+Verfasser
+    Hier kommt der Autor hinein. Es sollte ein Autor verlinkt werden. Über das
+    grüne "+" kann die gleiche Maske wie in :ref:`autor_neu` aufgerufen werden.
+
+Quelle
+~~~~~~
+
+Quelltitel
+    Manchmal ist es sinnvoll den Titel der Quelle mit anzugeben. Das kann in
+    diesem Feld erfolgen.
+Anzahl / Exemplare
+    Kann gesetzt werden, wenn es sich um eine Offline-Referenz handelt.
+Medienart
+    Zur genaueren Einordnung wird hier der Typ des Artikels mit angegeben.
+Standort (analoges Archiv)
+    Handelt es sich um eine analoge Referenz, zu der kein digitaler Inhalt
+    verfügbar ist, kann hier der Standort angegeben werden.
+Jahrgang
+    Das Jahr, in dem der Artikel ursprünglich erschienen ist.
+Ort / Veröffentlichung
+    Veröffentlichungsort, beispielsweise "Paderborn"
+Seiten
+    Länge eines Artikels
+Anmerkungen
+    Notizen und Anmerkungen zum Artikel können hier mit angegeben werden. Diese
+    erscheinen auch im öffentlichen Bereich.
+Schlagworte
+    Zur besseren Indexierung können hier die Themen des Artikels kurz angegeben
+    werden. Wird von der Suche mit berücksichtigt.
+
+Abstract
+~~~~~~~~
+
+Abstract
+    Viele (wissenschaftliche) Publikationen haben einen kleinen Abstract, der
+    mit extrahiert werden kann. Dieser wird von der Suche berücksichtigt und
+    natürlich auch im öffentlichen Bereich angezeigt, sodass man sofort grob
+    weiß, worum es geht.
+
+Dateien
+~~~~~~~
+
+Digitale Artikel können direkt für die Öffentlichkeit zum Download
+bereitgestellt werden. Bis zu drei Abbildungen und drei Dateien können hier
+angelegt werden. Diese werden intern dem Autor zugeordnet und bekommen auch
+entsprechend dem Autor eine eindeutige Adresse, um einen Link daraus zu
+generieren, welcher im öffentlichen Bereich angezeigt und geteilt werden kann.
+
+Meta-Informationen
+~~~~~~~~~~~~~~~~~~
+
+Sollte ein Artikel nicht mehr öffentlich verfügbar gemacht werden, aber intern
+noch abgelegt sein, kann hier der Haken entfernt werden. Der öffentliche Bereich
+bekommt nur die veröffentlichten Artikel zu sehen.
+
+Die weiteren Meta-Informationen ("Hinzugefügt am" und "Zuletzt geändert") werden
+automatisch gefüllt und können nicht bearbeitet werden.
