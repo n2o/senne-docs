@@ -11,11 +11,3 @@ einfach melden und wir passen das Archiv dann an.
 
    allgemein
    admin
-
-
-Indizes und Tabellen
-====================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
