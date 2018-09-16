@@ -1,23 +1,17 @@
-FROM python:3.7-alpine
+FROM python:3.7-alpine AS builder
 
-RUN apk add --no-cache make
-
-COPY Pipfile /code/Pipfile
-COPY Pipfile.lock /code/Pipfile.lock
-
-WORKDIR /code
-
-RUN pip install -U pip pipenv
-RUN pipenv install --system --deploy --ignore-pipfile
+RUN apk add --no-cache make && \
+    pip install -U sphinx sphinx-rtd-theme
 
 COPY . /code
 
 WORKDIR /code/docs
 
-RUN pipenv run make html
+RUN make html
 
-WORKDIR /code/docs/_build/html
 
-EXPOSE 8000
+FROM nginx:alpine
 
-CMD ["pipenv", "run", "python", "-m", "http.server"]
+WORKDIR /usr/share/nginx/html
+
+COPY --from=builder /code/docs/_build/html .
