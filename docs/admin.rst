@@ -168,6 +168,8 @@ angelegt werden.
 .. note:: Es erfolgt kein automatisches Speichern, sondern es muss manuell gespeichert
     werden.
 
+.. _item_uebersicht:
+
 .. figure:: img/items_uebersicht.png
 
     Übersicht aller eingestellten Items.
@@ -257,3 +259,67 @@ bekommt nur die veröffentlichten Artikel zu sehen.
 
 Die weiteren Meta-Informationen ("Hinzugefügt am" und "Zuletzt geändert") werden
 automatisch gefüllt und können nicht bearbeitet werden.
+
+
+Artikel ändern
+--------------
+
+Über die Übersichtsseite, die wir in :ref:`item_uebersicht` gesehen haben,
+können Artikel auch verändert werden. Dabei muss einfach nur ein Artikel
+angeklickt werden und schon kann er editiert werden. Es ist wichtig, dass auf
+"Sichern" geklickt wird, damit die Änderungen auch übernommen werden.
+
+.. note:: Alle Änderungen sind sofort wirksam und online direkt einsehbar.
+
+.. raw:: html
+
+    <video width="100%" controls>
+        <source src="_static/vids/item_aendern.mp4" type="video/mp4"> Dein
+        Browser unterstützt das Video nicht. Bitte installiere einen aktuellen
+        Browser.
+    </video>
+
+-------------------------------------------------------------------------------
+
+.. _filter:
+
+Filter
+======
+
+Der Adminbereich bietet die Möglichkeit die Artikel nach bestimmten Kriterien zu
+filtern. Dabei werden *alle* Filter angewandt, die gerade aktiv sind. Das heißt,
+wenn nur nach "Buch" gefiltert wird, reduziert sich die Menge der
+Suchergebnisse. Wählt man nun noch zusätzlich einen Jahrgang aus, kannn die
+Suche weiter beschränkt werden. Durch ein Klick auf "Alle" im entsprechenden
+Filter kann der Filter zurückgesetzt werden. Im Video zeige ich ein kleines
+Beispiel dazu, wie zuerst alle Artikel angezeigt werden, dann auf die Bücher
+beschränkt wird und anschließend noch ein Jahrgang gewählt wird. Zuletzt werden
+alle Filter zurückgesetzt und wieder alle Ergebnisse angezeigt.
+
+.. raw:: html
+
+    <video width="100%" controls>
+        <source src="_static/vids/admin_filter.mp4" type="video/mp4"> Dein
+        Browser unterstützt das Video nicht. Bitte installiere einen aktuellen
+        Browser.
+    </video>
+
+-------------------------------------------------------------------------------
+
+.. _suche:
+
+Suche
+=====
+
+Der Adminbereich hat eine eigene Suche, die in Kombination mit den Filtern
+(siehe :ref:`filter`) verwendet werden kann. So kann beispielsweise zuerst nach
+einem Schlagwort in den Feldern des Artikels und anschließend nach der
+Medienart, Autor, Jahrgang etc. gefiltert werden.
+
+.. raw:: html
+
+    <video width="100%" controls>
+        <source src="_static/vids/admin_suche.mp4" type="video/mp4"> Dein
+        Browser unterstützt das Video nicht. Bitte installiere einen aktuellen
+        Browser.
+    </video>
