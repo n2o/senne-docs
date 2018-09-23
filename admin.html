@@ -1,0 +1,497 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Adminbereich &mdash; Senne Digitalarchiv v1.0.0 Dokumentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
+    <link rel="search" title="Suche" href="search.html" />
+    <link rel="prev" title="Öffentlicher Bereich" href="allgemein.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Senne Digitalarchiv
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Themen:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="allgemein.html">Öffentlicher Bereich</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Adminbereich</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allgemeines">Allgemeines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#login">Login</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#der-editor">Der Editor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#inhalte-bearbeiten">Inhalte bearbeiten</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#startseite-editieren">Startseite editieren</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#archivinhalte">Archivinhalte</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#autoren">Autoren</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#neuen-autor-hinzufugen">Neuen Autor hinzufügen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bestehenden-autor-bearbeiten">Bestehenden Autor bearbeiten</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#items-artikel">Items / Artikel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#neuen-artikel-anlegen">Neuen Artikel anlegen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#titel-und-verfasser">Titel und Verfasser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quelle">Quelle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#abstract">Abstract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dateien">Dateien</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#meta-informationen">Meta-Informationen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#artikel-andern">Artikel ändern</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#filter">Filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#suche">Suche</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Senne Digitalarchiv</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Adminbereich</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/admin.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="adminbereich">
+<span id="id1"></span><h1>Adminbereich<a class="headerlink" href="#adminbereich" title="Link zu dieser Überschrift">¶</a></h1>
+<div class="section" id="allgemeines">
+<h2>Allgemeines<a class="headerlink" href="#allgemeines" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="login">
+<span id="id2"></span><h3>Login<a class="headerlink" href="#login" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Der Login erfolgt über den Link „Login“ am Boden der Seiten. Ist man eingeloggt,
+so ändert sich der Linkname zu „Adminbereich“ und man kommt in den
+<a class="reference internal" href="#adminbereich"><span class="std std-ref">Adminbereich</span></a> bei Klick auf diesen Link.</p>
+<p>Eine freie Registrierung ist nicht möglich. Das haben wir deaktiviert, da es für
+den Anwendungsfall nicht notwendig ist. Neue Accounts können über den Admin
+angelegt werden.</p>
+<iframe width="768" height="686" src="https://www.youtube.com/embed/Xz-K4H402PA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<div class="section" id="der-editor">
+<h3>Der Editor<a class="headerlink" href="#der-editor" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Im Web müssen wir Textformatierungen explizit mit angeben, damit der
+Internetbrowser weiß, wie er den Text anzeigen soll. So müssen Textausschnitte
+separat annotiert werden, um einen Effekt (beispielsweise <strong>Fettdruck</strong>) zu
+erzielen.</p>
+<p>Da man sich das aber nicht alles auswendig merken möchte, wird an vielen Stellen
+im Adminbereich bei Textfeldern ein besonderer Editor verwendet, bei dem der
+eingegebene Text direkt mit diesen Annotationen versehen und eine Demo des
+fertigen Texts angesehen werden kann. Das kann beispielsweise so aussehen:</p>
+<video width="100%" controls>
+    <source src="_static/vids/senne_editor.mp4" type="video/mp4">
+    Dein Browser unterstützt das Video nicht. Bitte installiere einen aktuellen Browser.
+</video><p>Im oberen Textfeld gibt man dabei seinen gewünschten Text ein und im unteren,
+nicht editierbaren Feld namens „HTML Preview“ wird die fertige Version
+angezeigt, wie sie dann auch für andere auf der Webseite angezeigt werden kann.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="inhalte-bearbeiten">
+<h2>Inhalte bearbeiten<a class="headerlink" href="#inhalte-bearbeiten" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="startseite-editieren">
+<h3>Startseite editieren<a class="headerlink" href="#startseite-editieren" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Die Startseite kann über den Adminbereich verändert werden. Bitte nur die
+bestehende Seite ändern und keine neue anlegen – einfach wie im Video die
+bestehende Seite anklicken und dann Texte hinzufügen oder ändern, neue Bilder
+einpflegen und so weiter. Eine Vorschau des Texts kann man direkt unter dem
+Eingabefeld sehen. Eine kleine Demo gibt es in dem folgenden Video:</p>
+<video width="100%" controls>
+    <source src="_static/vids/startseite_veraendern.mp4" type="video/mp4">
+    Dein Browser unterstützt das Video nicht. Bitte installiere einen
+    aktuellen Browser.
+</video></div>
+</div>
+<hr class="docutils" />
+<div class="section" id="archivinhalte">
+<h2>Archivinhalte<a class="headerlink" href="#archivinhalte" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Über die Startseite des Adminbereichs kann der Unterbereich erreicht werden, der
+für die Verwaltung der Archivinhalte verantwortlich ist. Dafür ist es notwendig
+im System eingeloggt zu sein (siehe <a class="reference internal" href="#login"><span class="std std-ref">Login</span></a>).</p>
+<p>Ein Eintrag (= <em>Item</em>) im Archiv ist immer mit einem <em>Autor</em> verknüpft. Dafür gibt
+es zwei Tabellen, in denen die entsprechenden Inhalte angelegt werden können.</p>
+<img alt="_images/archiv_models.png" src="_images/archiv_models.png" />
+<div class="section" id="autoren">
+<span id="id3"></span><h3>Autoren<a class="headerlink" href="#autoren" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Mit einem Klick auf „Autoren“ oder auf „Ändern“ kommen wir an die Übersicht der
+Autoren. Hier können bereits eingetragene Autoren gesichtet und bearbeitet
+werden. Oben drüber gibt es eine Suche, die in Nachnamen und Vornamen des Autors
+sucht. Mit Klick auf die Tabellenspalten kann die Sortierung angepasst werden.
+Auf der rechten Seite sind Filter definiert, die es ermöglichen die
+Autorenübersicht ein wenig anzupassen. Da es aber wenig geteilte Attribute
+zwischen den Autoren gibt, bringt der Filter an dieser Stelle nicht sehr viel.</p>
+<div class="figure" id="id6">
+<span id="autoren-uebersicht"></span><img alt="_images/autoren_uebersicht.png" src="_images/autoren_uebersicht.png" />
+<p class="caption"><span class="caption-text">Autorenübersicht im Adminbereich</span></p>
+</div>
+<p>Autoren haben vier sichtbare Attribute:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Titel</strong>: Akademische Grade / Titel, wie bspw. „Dr.“ können hier eingestellt
+werden</li>
+<li><strong>Vorname</strong> und <strong>Nachname</strong> des Autors</li>
+<li><strong>Speicherpfad</strong>: wird automatisch aus den oberen drei Feldern berechnet.
+Wird genutzt, um die Dateien, die vom Autor verfasst wurden und später unter
+<a class="reference internal" href="#items"><span class="std std-ref">Items / Artikel</span></a> angelegt wurden, zu referenzieren. Dieses Feld kann nicht
+editiert werden.</li>
+</ul>
+</div></blockquote>
+<p>Oben rechts befindet sich der Button „Autor hinzufügen“, den wir im nächsten
+Abschnitt behandeln.</p>
+<div class="section" id="neuen-autor-hinzufugen">
+<span id="autor-neu"></span><h4>Neuen Autor hinzufügen<a class="headerlink" href="#neuen-autor-hinzufugen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Es muss mindestens ein Nachname zu einem Autor hinzugefügt werden. Die anderen
+Felder sind optional, sollten aber auch ausgefüllt werden, sofern die
+Informationen vorliegen. Die Maske zum Hinzufügen eines Autors ist daher auch
+sehr einfach. Der obere Bereich kann editiert werden, der Rest wird automatisch
+generiert.</p>
+<div class="figure" id="id7">
+<img alt="_images/autoren_hinzufuegen.png" src="_images/autoren_hinzufuegen.png" />
+<p class="caption"><span class="caption-text">Autor hinzufügen. Am Ende unten rechts auf „Sichern“ klicken.</span></p>
+</div>
+</div>
+<div class="section" id="bestehenden-autor-bearbeiten">
+<h4>Bestehenden Autor bearbeiten<a class="headerlink" href="#bestehenden-autor-bearbeiten" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Klickt man in der Abbildung „<a class="reference internal" href="#autoren-uebersicht"><span class="std std-ref">Autorenübersicht im Adminbereich</span></a>“ auf den Nachnamen eines
+Autors, so kann man ihn editieren. Die Eingabefelder sind dann die selben, wie
+beim Hinzufügen eines neuen Autors.</p>
+<video width="100%" controls>
+    <source src="_static/vids/autor_bearbeiten.mp4" type="video/mp4"> Dein
+    Browser unterstützt das Video nicht. Bitte installiere einen aktuellen
+    Browser.
+</video><hr class="docutils" />
+</div>
+</div>
+</div>
+<div class="section" id="items-artikel">
+<span id="items"></span><h2>Items / Artikel<a class="headerlink" href="#items-artikel" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Ohne Artikel wäre es ein sehr trauriges Archiv. Hier wird beschrieben, wie Items
+angelegt werden können, die dann sowohl intern als auch öffentlich einsehbar
+sind. Bitte unbedingt auf „Sichern“ klicken, damit die Artikel auch korrekt
+angelegt werden.</p>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Es erfolgt kein automatisches Speichern, sondern es muss manuell gespeichert
+werden.</p>
+</div>
+<div class="figure" id="id8">
+<span id="item-uebersicht"></span><img alt="_images/items_uebersicht.png" src="_images/items_uebersicht.png" />
+<p class="caption"><span class="caption-text">Übersicht aller eingestellten Items.</span></p>
+</div>
+<div class="section" id="neuen-artikel-anlegen">
+<h3>Neuen Artikel anlegen<a class="headerlink" href="#neuen-artikel-anlegen" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Klingt man in dem Bildchen oben auf „Item hinzufügen“, so öffnet sich die Maske
+zur Erstellung eines neuen Artikels.</p>
+<video width="100%" controls>
+    <source src="_static/vids/item_anlegen.mp4" type="video/mp4"> Dein
+    Browser unterstützt das Video nicht. Bitte installiere einen aktuellen
+    Browser.
+</video><p>Die Pflichtfelder sind bewusst gering gehalten, damit ein frustfreies Anlegen
+garantiert ist. Es ist natürlich sehr sinnvoll die anderen Felder auch alle mit
+auszufüllen, falls möglich.</p>
+<p>Im Folgenden seien die einzelnen Felder erklärt, die ausgefüllt werden können.</p>
+<div class="section" id="titel-und-verfasser">
+<h4>Titel und Verfasser<a class="headerlink" href="#titel-und-verfasser" title="Link zu dieser Überschrift">¶</a></h4>
+<dl class="docutils">
+<dt>Titel</dt>
+<dd>Das ist der angezeigte Titel des Artikels, so wie er auch im öffentlichen
+Bereich angezeigt werden soll</dd>
+<dt>Verfasser</dt>
+<dd>Hier kommt der Autor hinein. Es sollte ein Autor verlinkt werden. Über das
+grüne „+“ kann die gleiche Maske wie in <a class="reference internal" href="#autor-neu"><span class="std std-ref">Neuen Autor hinzufügen</span></a> aufgerufen werden.</dd>
+</dl>
+</div>
+<div class="section" id="quelle">
+<h4>Quelle<a class="headerlink" href="#quelle" title="Link zu dieser Überschrift">¶</a></h4>
+<dl class="docutils">
+<dt>Quelltitel</dt>
+<dd>Manchmal ist es sinnvoll den Titel der Quelle mit anzugeben. Das kann in
+diesem Feld erfolgen.</dd>
+<dt>Anzahl / Exemplare</dt>
+<dd>Kann gesetzt werden, wenn es sich um eine Offline-Referenz handelt.</dd>
+<dt>Medienart</dt>
+<dd>Zur genaueren Einordnung wird hier der Typ des Artikels mit angegeben.</dd>
+<dt>Standort (analoges Archiv)</dt>
+<dd>Handelt es sich um eine analoge Referenz, zu der kein digitaler Inhalt
+verfügbar ist, kann hier der Standort angegeben werden.</dd>
+<dt>Jahrgang</dt>
+<dd>Das Jahr, in dem der Artikel ursprünglich erschienen ist.</dd>
+<dt>Ort / Veröffentlichung</dt>
+<dd>Veröffentlichungsort, beispielsweise „Paderborn“</dd>
+<dt>Seiten</dt>
+<dd>Länge eines Artikels</dd>
+<dt>Anmerkungen</dt>
+<dd>Notizen und Anmerkungen zum Artikel können hier mit angegeben werden. Diese
+erscheinen auch im öffentlichen Bereich.</dd>
+<dt>Schlagworte</dt>
+<dd>Zur besseren Indexierung können hier die Themen des Artikels kurz angegeben
+werden. Wird von der Suche mit berücksichtigt.</dd>
+</dl>
+</div>
+<div class="section" id="abstract">
+<h4>Abstract<a class="headerlink" href="#abstract" title="Link zu dieser Überschrift">¶</a></h4>
+<dl class="docutils">
+<dt>Abstract</dt>
+<dd>Viele (wissenschaftliche) Publikationen haben einen kleinen Abstract, der
+mit extrahiert werden kann. Dieser wird von der Suche berücksichtigt und
+natürlich auch im öffentlichen Bereich angezeigt, sodass man sofort grob
+weiß, worum es geht.</dd>
+</dl>
+</div>
+<div class="section" id="dateien">
+<h4>Dateien<a class="headerlink" href="#dateien" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Digitale Artikel können direkt für die Öffentlichkeit zum Download
+bereitgestellt werden. Bis zu drei Abbildungen und drei Dateien können hier
+angelegt werden. Diese werden intern dem Autor zugeordnet und bekommen auch
+entsprechend dem Autor eine eindeutige Adresse, um einen Link daraus zu
+generieren, welcher im öffentlichen Bereich angezeigt und geteilt werden kann.</p>
+</div>
+<div class="section" id="meta-informationen">
+<h4>Meta-Informationen<a class="headerlink" href="#meta-informationen" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Sollte ein Artikel nicht mehr öffentlich verfügbar gemacht werden, aber intern
+noch abgelegt sein, kann hier der Haken entfernt werden. Der öffentliche Bereich
+bekommt nur die veröffentlichten Artikel zu sehen.</p>
+<p>Die weiteren Meta-Informationen („Hinzugefügt am“ und „Zuletzt geändert“) werden
+automatisch gefüllt und können nicht bearbeitet werden.</p>
+</div>
+</div>
+<div class="section" id="artikel-andern">
+<h3>Artikel ändern<a class="headerlink" href="#artikel-andern" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Über die Übersichtsseite, die wir in <a class="reference internal" href="#item-uebersicht"><span class="std std-ref">Übersicht aller eingestellten Items.</span></a> gesehen haben,
+können Artikel auch verändert werden. Dabei muss einfach nur ein Artikel
+angeklickt werden und schon kann er editiert werden. Es ist wichtig, dass auf
+„Sichern“ geklickt wird, damit die Änderungen auch übernommen werden.</p>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Alle Änderungen sind sofort wirksam und online direkt einsehbar.</p>
+</div>
+<video width="100%" controls>
+    <source src="_static/vids/item_aendern.mp4" type="video/mp4"> Dein
+    Browser unterstützt das Video nicht. Bitte installiere einen aktuellen
+    Browser.
+</video><hr class="docutils" />
+</div>
+</div>
+<div class="section" id="filter">
+<span id="id4"></span><h2>Filter<a class="headerlink" href="#filter" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Der Adminbereich bietet die Möglichkeit die Artikel nach bestimmten Kriterien zu
+filtern. Dabei werden <em>alle</em> Filter angewandt, die gerade aktiv sind. Das heißt,
+wenn nur nach „Buch“ gefiltert wird, reduziert sich die Menge der
+Suchergebnisse. Wählt man nun noch zusätzlich einen Jahrgang aus, kannn die
+Suche weiter beschränkt werden. Durch ein Klick auf „Alle“ im entsprechenden
+Filter kann der Filter zurückgesetzt werden. Im Video zeige ich ein kleines
+Beispiel dazu, wie zuerst alle Artikel angezeigt werden, dann auf die Bücher
+beschränkt wird und anschließend noch ein Jahrgang gewählt wird. Zuletzt werden
+alle Filter zurückgesetzt und wieder alle Ergebnisse angezeigt.</p>
+<video width="100%" controls>
+    <source src="_static/vids/admin_filter.mp4" type="video/mp4"> Dein
+    Browser unterstützt das Video nicht. Bitte installiere einen aktuellen
+    Browser.
+</video><hr class="docutils" />
+</div>
+<div class="section" id="suche">
+<span id="id5"></span><h2>Suche<a class="headerlink" href="#suche" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Der Adminbereich hat eine eigene Suche, die in Kombination mit den Filtern
+(siehe <a class="reference internal" href="#filter"><span class="std std-ref">Filter</span></a>) verwendet werden kann. So kann beispielsweise zuerst nach
+einem Schlagwort in den Feldern des Artikels und anschließend nach der
+Medienart, Autor, Jahrgang etc. gefiltert werden.</p>
+<video width="100%" controls>
+    <source src="_static/vids/admin_suche.mp4" type="video/mp4"> Dein
+    Browser unterstützt das Video nicht. Bitte installiere einen aktuellen
+    Browser.
+</video></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="allgemein.html" class="btn btn-neutral" title="Öffentlicher Bereich" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Christian Meter.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v1.0.0',
+            LANGUAGE:'de',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
